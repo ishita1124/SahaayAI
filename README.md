@@ -93,8 +93,8 @@ Submitted → Under Review → In Progress → Resolved
 | Authentication    | Token-based authentication             |
 | Version Control   | Git & GitHub                           |
 
-📂 Project Structure
-
+## 📂 Project Structure
+```text
 SahaayAI/
 │
 ├── README.md
@@ -142,9 +142,10 @@ SahaayAI/
             ├── TrackComplaint.jsx
             ├── CitizenDashboard.jsx
             └── AdminPanel.jsx
+```
 
 ## 🏗️ System Architecture
-
+```text
                     ┌─────────────────────┐
                     │      Citizen        │
                     └──────────┬──────────┘
@@ -178,10 +179,12 @@ SahaayAI/
                                            │    SQLite    │
                                            │   Database   │
                                            └──────────────┘
+```
+           
 ## 🧠 AI Processing Workflow
 
 When a grievance is submitted:
-
+```text
 Complaint Title + Description
             │
             ▼
@@ -203,6 +206,7 @@ Complaint Title + Description
      │
      ▼
  Database + Tracking ID
+ ```
 
 The AI engine returns information such as:
 
@@ -338,7 +342,7 @@ The local database file is:
 backend/sahaayai.db
 
 The database contains the main entities:
-
+```text
 Users
    │
    ▼
@@ -346,6 +350,7 @@ Complaints
    │
    ▼
 Complaint Timeline
+```
 
 The database file is intentionally excluded from GitHub through .gitignore.
 
