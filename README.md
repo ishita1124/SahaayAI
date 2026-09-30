@@ -210,13 +210,13 @@ Complaint Title + Description
 
 The AI engine returns information such as:
 
-Predicted department
-Confidence score
-Priority
-Urgency score
-Extracted keywords
-AI explanation
-Department-wise prediction information
+- Predicted department
+- Confidence score
+- Priority
+- Urgency score
+- Extracted keywords
+- AI explanation
+- Department-wise prediction information
 
 ## 🔐 Authentication & Roles
 
@@ -226,54 +226,63 @@ SahaayAI supports two user roles:
 
 Citizens can:
 
-Register
-Login
-Lodge grievances
-Track grievances
-View their grievance history
-Submit feedback
+- Register
+- Login
+- Lodge grievances
+- Track grievances
+- View their grievance history
+- Submit feedback
 
 ### Administrator
 
 Administrators can:
 
-Login
-Lodge and track their own grievances
-Access the Admin Panel
-View all registered grievances
-Review and update complaints
-Manage assignments
-Monitor analytics
+- Login
+- Lodge and track their own grievances
+- Access the Admin Panel
+- View all registered grievances
+- Review and update complaints
+- Manage assignments
+- Monitor analytics
 
 Note: For this academic prototype, administrator registration is available through the application. A production deployment should restrict administrator account creation to an authorized authority.
 
 ## 📡 API Endpoints
 
 ### Authentication
+```text
 POST /api/auth/register
 POST /api/auth/login
 GET  /api/auth/me
-
+```
 ### AI Analysis
+```text
 POST /api/ai/analyze-complaint
 GET  /api/ai/departments
-
+```
 ### Departments
+```text
 GET /api/departments
+```
 
 ### Citizen Complaints
+```text
 POST /api/complaints
 GET  /api/complaints/track/{tracking_id}
 GET  /api/complaints/my
 POST /api/complaints/{complaint_id}/feedback
+```
 
 ### Administration
+```text
 GET   /api/admin/complaints
 PATCH /api/admin/complaints/{complaint_id}/review
 GET   /api/admin/analytics
 POST  /api/admin/seed-demo
+```
 
 ## 🚀 Running the Project Locally
+```text
 Prerequisites
 
 Make sure you have installed:
@@ -330,9 +339,10 @@ npm run dev
 The frontend will run at:
 
 http://localhost:3000
+```
 
 ## 💾 Database
-
+```text
 SahaayAI currently uses:
 
 SQLite + SQLAlchemy ORM
@@ -340,6 +350,7 @@ SQLite + SQLAlchemy ORM
 The local database file is:
 
 backend/sahaayai.db
+```
 
 The database contains the main entities:
 ```text
@@ -366,32 +377,36 @@ http://127.0.0.1:8000/docs
 
 From there you can test:
 
-Authentication
-AI analysis
-Complaint creation
-Complaint tracking
-Citizen complaints
-Feedback
-Administrative operations
-Analytics
+- Authentication
+- AI analysis
+- Complaint creation
+- Complaint tracking
+- Citizen complaints
+- Feedback
+- Administrative operations
+- Analytics
+
 🔄 Development Workflow
 
 For future changes:
-
+```text
 git add .
 git commit -m "Describe your changes"
 git push
 
 The project uses the main branch as the primary branch.
+```
 
 ## 📌 Important Notes
+```text
 The SQLite database is not included in the repository.
 Python virtual environment files are excluded from Git.
 Node modules are excluded from Git.
 The ML model required by the AI engine is included under backend/saved_models/.
 The project is currently configured for local development.
 Production deployment would require stronger authentication, secure password hashing, protected administrator creation, environment variables, and production database configuration.
-🎓 Academic Project
+```
+## 🎓 Academic Project
 
 ## Project: SahaayAI – AI-Based Smart Grievance Redressal System
 
@@ -399,7 +414,7 @@ Student: Ishita Bansal
 Roll Number: 8523225
 Program: B.Tech CSE (Artificial Intelligence & Machine Learning)
 Session: 2023–2027
-Department: Computer Science & Engineering
+Department: Computer Science & Engineering (AIML)
 Institution: JMIETI, Radaur
 
 ## 👩‍💻 Author
@@ -409,5 +424,5 @@ Ishita Bansal
 B.Tech CSE (AIML)
 JMIETI, Radaur
 
-GitHub:
+### GitHub:
 https://github.com/ishita1124
