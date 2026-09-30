@@ -76,8 +76,9 @@ The grievance lifecycle can be tracked through:
 
 Submitted → Under Review → In Progress → Resolved
                                       ↘ Rejected
+```
 
-🛠️ Technology Stack
+## 🛠️ Technology Stack
 
 | Layer             | Technologies                           |
 | ----------------- | -------------------------------------- |
@@ -142,7 +143,7 @@ SahaayAI/
             ├── CitizenDashboard.jsx
             └── AdminPanel.jsx
 
-🏗️ System Architecture
+## 🏗️ System Architecture
 
                     ┌─────────────────────┐
                     │      Citizen        │
@@ -177,7 +178,7 @@ SahaayAI/
                                            │    SQLite    │
                                            │   Database   │
                                            └──────────────┘
-🧠 AI Processing Workflow
+## 🧠 AI Processing Workflow
 
 When a grievance is submitted:
 
@@ -213,11 +214,11 @@ Extracted keywords
 AI explanation
 Department-wise prediction information
 
-🔐 Authentication & Roles
+## 🔐 Authentication & Roles
 
 SahaayAI supports two user roles:
 
-Citizen
+### Citizen
 
 Citizens can:
 
@@ -227,7 +228,8 @@ Lodge grievances
 Track grievances
 View their grievance history
 Submit feedback
-Administrator
+
+### Administrator
 
 Administrators can:
 
@@ -241,27 +243,33 @@ Monitor analytics
 
 Note: For this academic prototype, administrator registration is available through the application. A production deployment should restrict administrator account creation to an authorized authority.
 
-📡 API Endpoints
-Authentication
+## 📡 API Endpoints
+
+### Authentication
 POST /api/auth/register
 POST /api/auth/login
 GET  /api/auth/me
-AI Analysis
+
+### AI Analysis
 POST /api/ai/analyze-complaint
 GET  /api/ai/departments
-Departments
+
+### Departments
 GET /api/departments
-Citizen Complaints
+
+### Citizen Complaints
 POST /api/complaints
 GET  /api/complaints/track/{tracking_id}
 GET  /api/complaints/my
 POST /api/complaints/{complaint_id}/feedback
-Administration
+
+### Administration
 GET   /api/admin/complaints
 PATCH /api/admin/complaints/{complaint_id}/review
 GET   /api/admin/analytics
 POST  /api/admin/seed-demo
-🚀 Running the Project Locally
+
+## 🚀 Running the Project Locally
 Prerequisites
 
 Make sure you have installed:
@@ -318,7 +326,8 @@ npm run dev
 The frontend will run at:
 
 http://localhost:3000
-💾 Database
+
+## 💾 Database
 
 SahaayAI currently uses:
 
@@ -342,7 +351,7 @@ The database file is intentionally excluded from GitHub through .gitignore.
 
 This prevents local test/demo user information from being uploaded to the public repository.
 
-🧪 API Testing
+## 🧪 API Testing
 
 FastAPI provides interactive API documentation through Swagger UI.
 
@@ -370,7 +379,7 @@ git push
 
 The project uses the main branch as the primary branch.
 
-📌 Important Notes
+## 📌 Important Notes
 The SQLite database is not included in the repository.
 Python virtual environment files are excluded from Git.
 Node modules are excluded from Git.
@@ -379,7 +388,7 @@ The project is currently configured for local development.
 Production deployment would require stronger authentication, secure password hashing, protected administrator creation, environment variables, and production database configuration.
 🎓 Academic Project
 
-Project: SahaayAI – AI-Based Smart Grievance Redressal System
+## Project: SahaayAI – AI-Based Smart Grievance Redressal System
 
 Student: Ishita Bansal
 Roll Number: 8523225
@@ -388,7 +397,7 @@ Session: 2023–2027
 Department: Computer Science & Engineering
 Institution: JMIETI, Radaur
 
-👩‍💻 Author
+## 👩‍💻 Author
 
 Ishita Bansal
 
