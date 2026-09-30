@@ -71,9 +71,9 @@ Each grievance receives a unique tracking ID in the format:
 
 ```text
 SHY-YYYY-XXXX
-
+```
 The grievance lifecycle can be tracked through:
-
+```text
 Submitted → Under Review → In Progress → Resolved
                                       ↘ Rejected
 ```
@@ -282,73 +282,77 @@ POST  /api/admin/seed-demo
 ```
 
 ## 🚀 Running the Project Locally
-```text
-Prerequisites
+
+### Prerequisites
 
 Make sure you have installed:
 
-Python 3
-Node.js and npm
-Git
-Step 1: Clone the Repository
+- Python 3
+- Node.js and npm
+- Git
+
+### Step 1: Clone the Repository
+```text
 git clone https://github.com/ishita1124/SahaayAI.git
 cd SahaayAI
-Step 2: Setup the Backend
+```
+### Step 2: Setup the Backend
 
 Open a terminal inside the backend folder:
-
+```text
 cd backend
-
+```
 Create a virtual environment:
-
+```text
 python -m venv venv
-
+```
 Activate it on Windows:
-
+```text
 venv\Scripts\activate
-
+```
 Install the dependencies:
-
+```text
 pip install -r requirements.txt
-
+```
 Start the FastAPI server:
-
+```text
 python -m uvicorn main:app
-
+```
 The backend will run at:
-
+```text
 http://127.0.0.1:8000
-
+```
 FastAPI Swagger documentation is available at:
-
+```text
 http://127.0.0.1:8000/docs
-Step 3: Setup the Frontend
+```
+### Step 3: Setup the Frontend
 
 Open another terminal:
-
+```text
 cd frontend
-
+```
 Install dependencies:
-
+```text
 npm install
-
+```
 Start the React development server:
-
+```text
 npm run dev
-
+```
 The frontend will run at:
-
+```text
 http://localhost:3000
 ```
 
 ## 💾 Database
-```text
 SahaayAI currently uses:
 
+```text
 SQLite + SQLAlchemy ORM
-
+```
 The local database file is:
-
+```text
 backend/sahaayai.db
 ```
 
@@ -393,9 +397,9 @@ For future changes:
 git add .
 git commit -m "Describe your changes"
 git push
-
-The project uses the main branch as the primary branch.
 ```
+The project uses the main branch as the primary branch.
+
 
 ## 📌 Important Notes
 ```text
