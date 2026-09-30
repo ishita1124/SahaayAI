@@ -414,12 +414,12 @@ Production deployment would require stronger authentication, secure password has
 
 ## Project: SahaayAI – AI-Based Smart Grievance Redressal System
 
--Student: Ishita Bansal
--Roll Number: 8523225
--Program: B.Tech CSE (Artificial Intelligence & Machine Learning)
--Session: 2023–2027
--Department: Computer Science & Engineering (AIML)
--Institution: JMIETI, Radaur
+- Student: Ishita Bansal
+- Roll Number: 8523225
+- Program: B.Tech CSE (Artificial Intelligence & Machine Learning)
+- Session: 2023–2027
+- Department: Computer Science & Engineering (AIML)
+- Institution: JMIETI, Radaur
 
 ## 👩‍💻 Author
 
